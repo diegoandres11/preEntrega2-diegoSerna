@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--estilos css propios-->
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/f04861e7cb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--header de la pagina contactanos-->
+    <header class="header">
+        <div class="containerHeader">
+            <a href="../index.html">
+                <img src="../assets/img/colombia.png" alt="logo" class="imgLogo">
+            </a>
+            <h1>Parque el Colombiano</h1>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg col">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./atracciones.html">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./planeaTuVisita.html">Planea tu visita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--main de la pagina contactanos-->
+    <main id="main" class="main-page">
+
+        <div class="divContact">
+            <h2 class="tituloContactanos">Contactanos</h2>
+            <p class="textoContactanos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ipsum ut illo soluta. Laudantium nam maxime eligendi ab. Eveniet, optio sint nihil eos nemo numquam vel iste eum eligendi facere!</p>
+        </div>
+        
+        <iframe class="imgContacto"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.341008922682!2d-75.6755579250217!3d4.5324687954419955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5ade5e56e11%3A0x71a6916898dbd76a!2sPlaza%20de%20Bol%C3%ADvar!5e0!3m2!1ses!2sco!4v1699926505873!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div id="contactoForm">
+            <h2 class="tituloForm">Formulario de Contacto</h2>
+
+        <form>
+            <!-- Campos del formulario -->
+            <label for="nombre" class="labelContact">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <br>
+
+            <label for="email" class="labelContact">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <label for="mensaje" class="labelContact">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <br>
+
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar">
+
+        </form>
+        </div>
+        
+    </main>
+    <!--footer de la pagina contactanos-->
+    <footer id="footer" class="footer">
+        
+                <div>
+                        <h3 class="tituloFooter">Nuestras redes sociales</h3>
+                        <div>
+                            <a href="" class="enlace row">
+                                <i class="fa-brands fa-facebook"> Facebook</i>
+                            </a>
+                            <a href="" class="enlace what row">
+                                <i class="fa-brands fa-whatsapp">Whatsapp</i>
+                            </a>
+                            <a href="" class="enlace insta row">
+                                <i class="fa-brands fa-instagram">Instagram</i>
+                            </a>
+                        </div>
+                        
+                </div>
+
+                <p class="mensaje">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
+
+                <div>
+                    <h3 class="tituloFooter">Horario</h3>
+                    <div>
+                        <p>De Lunes a Domingo</p>
+                        <p>9:00am - 9:00pm</p>
+                    </div>
+                    
+                </div>
+    </footer>
+    <!--etiqueta script cdn de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
