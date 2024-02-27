@@ -12,8 +12,8 @@
 </head>
 <body>
     <!--header de la pagina atracciones-->
-    <header class="header">
-        <div class="containerHeader">
+    <header class="header container-fluid">
+        <div class="containerHeader col">
             <a href="./atracciones.html">
                 <img src="/assets/img/colombia.png" alt="logo" class="imgLogo">
             </a>
@@ -21,7 +21,7 @@
         </div>
         
         <nav class="navbar navbar-expand-lg col">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,67 +47,74 @@
     </header>
     <!--main de la pagina atraccion-->
     <main class="main-page">
-        <div id="contAtracciones">
-            <h1 class="tituloAtracciones">Atracciones parque el Colombiano</h1>
-            <p class="textoAtrac">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae incidunt maiores minus accusamus facilis, minima iste cum labore perferendis? Omnis minima nesciunt ipsa voluptas, similique ducimus atque maiores ut nam?</p>
-        </div>
-        <section class="sectionAtracciones">
-            
-            <ul class="listaAtracciones">
-                <li class="elementoAtracciones">
-                    <article class="card">
-                        <img src="/assets/img/montañaRusa.png" alt="montañaRusa" class="imgAtrac">
-                        <p>montaña rusa</p>
-                        <p>velocidad: 45km/h</p>
-                    </article>
-                </li>
-                <li class="elementoAtracciones">
-                    <article class="card">
-                        <img src="/assets/img/carousel.png" alt="carrusel" class="imgAtrac">
-                        <p>carrusel</p>
-                        <p>velocidad: 30km/h</p>
-                    </article>
-                </li>
-                <li class="elementoAtracciones">
-                    <article class="card">
-                        <img src="/assets/img/skull.png" alt="castilloDeTerror" class="imgAtrac">
-                        <p>castillo del terror</p>
-                        <p>tiempo de duracion: 15 min</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
+            <div id="contAtracciones">
+                <h1 class="tituloAtracciones">Atracciones parque el Colombiano</h1>
+                <p class="textoAtrac">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae incidunt maiores minus accusamus facilis, minima iste cum labore perferendis? Omnis minima nesciunt ipsa voluptas, similique ducimus atque maiores ut nam?</p>
+            </div>
+            <section class="sectionAtracciones container">
+                
+                <ul class="listaAtracciones row">
+                    <li class="elementoAtracciones col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <img src="/assets/img/montañaRusa.png" alt="montañaRusa" class="imgAtrac">
+                            <p>montaña rusa</p>
+                            <p>velocidad: 45km/h</p>
+                        </article>
+                    </li>
+                    <li class="elementoAtracciones col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <img src="/assets/img/carousel.png" alt="carrusel" class="imgAtrac">
+                            <p>carrusel</p>
+                            <p>velocidad: 30km/h</p>
+                        </article>
+                    </li>
+                    <li class="elementoAtracciones col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <img src="/assets/img/skull.png" alt="castilloDeTerror" class="imgAtrac">
+                            <p>castillo del terror</p>
+                            <p>tiempo de duracion: 15 min</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        
     </main>
     
     <!--footer de la pagina atracciones-->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer container-fluid">
+        <div class=" divFooter row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <h3 class="tituloFooter">Nuestras redes sociales</h3>
+                <div>
+                    <a href="" class="enlace row">
+                        <i class="fa-brands fa-facebook"> Facebook</i>
+                    </a>
+                    <a href="" class="enlace what row">
+                        <i class="fa-brands fa-whatsapp">Whatsapp</i>
+                    </a>
+                    <a href="" class="enlace insta row">
+                        <i class="fa-brands fa-instagram">Instagram</i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="mensaje col-sm-12 col-md-6 col-lg-4">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <h3 class="tituloFooter">Horario</h3>
+            <div>
+                <p>De Lunes a Domingo</p>
+                <p>9:00am - 9:00pm</p>
+            </div>
+            
+        </div>
+                
+        </div>
+
         
-                <div>
-                        <h3 class="tituloFooter">Nuestras redes sociales</>
-                        <div>
-                            <a href="" class="enlace row">
-                                <i class="fa-brands fa-facebook"> Facebook</i>
-                            </a>
-                            <a href="" class="enlace what row">
-                                <i class="fa-brands fa-whatsapp">Whatsapp</i>
-                            </a>
-                            <a href="" class="enlace insta row">
-                                <i class="fa-brands fa-instagram">Instagram</i>
-                            </a>
-                        </div>
-                        
-                </div>
-
-                <p class="mensaje">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
-
-                <div>
-                    <h3 class="tituloFooter">Horario</h3>
-                    <div>
-                        <p>De Lunes a Domingo</p>
-                        <p>9:00am - 9:00pm</p>
-                    </div>
-                    
-                </div>
+        </div>
+        
+        
     </footer>
     <!--etiqueta script cdn de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

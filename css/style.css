@@ -74,6 +74,10 @@ h2 {
     text-decoration: none;
 }
 
+.divFooter{
+    display: flex;
+    align-items: center;
+}
 
 /*estilos de las cards*/
 .card {
@@ -107,6 +111,11 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.elementoAtracciones{
+    padding: 0%;
+    margin: 0;
 }
 
 .labelContact {
@@ -164,7 +173,7 @@ input[type="submit"] {
 }
 
 .nav-item {
-    margin-left: 20px; /* Espacio entre elementos del nav */
+    margin-left: 20px; /* Espacio entre del nav */
 }
 
 .nav-link {
@@ -242,12 +251,14 @@ a {
 }
 
 
-
-
 i {
     margin: 5px; 
 }
 
+#hamburg{
+    color: rgb(236, 239, 134);
+    background-color: white;
+}
 
 .mensaje{
     font-style: italic;
@@ -424,6 +435,7 @@ h4 {
   .listaAtracciones{
     display: flex;
     align-items: center;
+    text-align: center;
   }
 
   /*estilos de planea tu visita*/
@@ -456,4 +468,10 @@ h4 {
 
   #contactoForm{
     margin: 2%;
+  }
+
+  i{
+    display: block;
+    padding: 0%;
+    margin: 0%;
   }
