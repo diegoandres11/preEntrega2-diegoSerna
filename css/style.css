@@ -36,6 +36,9 @@ nav ul li {
 }
 /*estilos del main*/
 
+#main{
+    grid-area: main;
+}
 
 
 
@@ -63,6 +66,7 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    grid-area: footer;
 }
 
 .footer p {
@@ -151,6 +155,7 @@ input[type="submit"] {
     justify-content: space-between; 
     align-items: center;
     padding: 10px; 
+    grid-area: header;
 }
 
 /* Estilos para el contenedor del header */
@@ -269,6 +274,18 @@ i {
 h4 {
     margin-bottom: 10px;
 }
+
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 10% 70% 20%;
+}
+
 /* Estilos para el contenedor principal */
 .contenedorMain {
     display: flex; /* Utilizamos flexbox */
@@ -475,3 +492,125 @@ h4 {
     padding: 0%;
     margin: 0%;
   }
+
+  /*media querys*/
+
+  /* Estilos base */
+
+/* Para hacer que los elementos de la clase .header y .footer se expandan al ancho completo del contenedor */
+.header,
+.footer {
+    width: 100%;
+}
+
+/* Establecer estilos para los elementos dentro de .containerHeader */
+.containerHeader {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los elementos de navegación */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Establecer estilos para los elementos dentro de .footer */
+.divFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media queries para hacer que la estructura sea responsive */
+
+/* Para dispositivos con una anchura máxima de 768px */
+@media (max-width: 768px) {
+    .containerHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .divFooter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Para dispositivos con una anchura máxima de 576px */
+@media (max-width: 576px) {
+    .header,
+    .footer {
+        padding: 10px;
+    }
+}
+
+/*media querys de planea tu visita*/
+/* Estilos base */
+
+/* Ajustes generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilos de la sección principal */
+.divPlanea {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ir {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos del carousel de preguntas frecuentes */
+.faq-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.faq-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Media queries para hacer que el diseño sea responsive */
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Estilos de la sección principal */
+    .divPlanea {
+        margin-top: 10px;
+    }
+  
+    .faq-item {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .faq-item {
+        width: calc(100% - 20px);
+    }
+}
