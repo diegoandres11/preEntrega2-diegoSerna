@@ -1,0 +1,15 @@
+
+//variables
+@import './utilidades/variables';
+
+//utilidades
+@import './utilidades/reseteo';
+
+//import de todas las secciones
+@import './secciones/index';
+@import './secciones/header';
+@import './secciones/footer';
+@import './secciones/atracciones';
+@import './secciones/contactanos';
+@import './secciones/nosotros';
+@import './secciones/planeaTuVisita';

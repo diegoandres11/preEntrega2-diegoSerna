@@ -8,24 +8,25 @@
     <!--estilos css propios-->
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/f04861e7cb.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/img/colombia.png" type="image/x-icon">
+    <title>Planea tu visita</title>
 </head>
 <body>
     <!--header de la pagina planea tu visita-->
     <header class="header">
-        <div class="containerHeader">
-            <a href="../index.html">
+        <div class="containerHeader col">
+            <a href="./planeaTuVisita.html">
                 <img src="../assets/img/colombia.png" alt="logo" class="imgLogo">
             </a>
             <h1>Parque el Colombiano</h1>
         </div>
         
-        <nav class="navbar navbar-expand-lg col">
+        <nav class="navbar navbar-expand-lg col" id="nav">
             <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav flex-column flex-lg-row">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
@@ -46,7 +47,7 @@
         </nav>
     </header>
     <!--main de la pagina planea tu visita-->
-    <main id="main" class="main-page">
+    <main id="main" class="main">
 
         <div class="divPlanea">
             <p>"¡Sumérgete en la diversión sin límites, donde cada risa es una aventura y cada momento es inolvidable! Bienvenido a el Parque el Colombiano, donde los sueños cobran vida y la emoción nunca termina."</p>
@@ -76,34 +77,37 @@
         </div>
     </main>
     <!--footer de la pagina planea tu visita-->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer container-fluid">
+        <div class="row">
+            <div class="itemFooter col-sm-12 col-md-6 col-lg-4">
+                <h3 class="tituloFooter">Nuestras redes sociales</h3>
+                <div>
+                    <a href="" class="enlace row">
+                        <i class="fa-brands fa-facebook"> Facebook</i>
+                    </a>
+                    <a href="" class="enlace what row">
+                        <i class="fa-brands fa-whatsapp">Whatsapp</i>
+                    </a>
+                    <a href="" class="enlace insta row">
+                        <i class="fa-brands fa-instagram">Instagram</i>
+                    </a>
+                </div>
+                
+        </div>
+
+        <p class="itemFooter mensaje col-sm-12 col-md-6 col-lg-4">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
+
+        <div class="itemFooter col-sm-12 col-md-6 col-lg-4">
+            <h3 class="tituloFooter">Horario</h3>
+            <div>
+                <p>De Lunes a Domingo</p>
+                <p>9:00am - 9:00pm</p>
+            </div>
+            
+        </div>
+        </div>
         
-                <div>
-                        <h3 class="tituloFooter">Nuestras redes sociales</h3>
-                        <div>
-                            <a href="" class="enlace row">
-                                <i class="fa-brands fa-facebook"> Facebook</i>
-                            </a>
-                            <a href="" class="enlace what row">
-                                <i class="fa-brands fa-whatsapp">Whatsapp</i>
-                            </a>
-                            <a href="" class="enlace insta row">
-                                <i class="fa-brands fa-instagram">Instagram</i>
-                            </a>
-                        </div>
-                        
-                </div>
-
-                <p class="mensaje">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
-
-                <div>
-                    <h3 class="tituloFooter">Horario</h3>
-                    <div>
-                        <p>De Lunes a Domingo</p>
-                        <p>9:00am - 9:00pm</p>
-                    </div>
-                    
-                </div>
+        
     </footer>
     <!--etiqueta script cdn de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

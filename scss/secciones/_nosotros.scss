@@ -1,0 +1,30 @@
+.mainNosotros{
+    .row{
+        display: flex;
+        justify-content: space-around;
+        .seccionQuienesSomos{
+            height: 90%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px; /* Tamaño específico para cada sección */
+            img{
+                width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+                height: 50%; /* La altura se ajustará automáticamente para mantener la proporción */
+                animation-name: aparecer;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                @keyframes aparecer {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+    
+}

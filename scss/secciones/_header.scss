@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    color: $colorLetra;
+    background-color: $colorBackground;
+    justify-content: space-between;
+    .containerHeader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 1%;
+        margin: 1%;
+        a{
+            img{
+                margin-right: 10px;
+                vertical-align: middle;
+                width: 50px;
+                max-width: 400px; /* Establecer un ancho máximo para la imagen */
+                border-radius: 8px; 
+            }
+        }
+    }
+    #nav{
+        
+        #hamburg{
+            background-color: white;
+            .icono{
+                color: white;
+            }
+        }
+        #navbarNav{
+            margin: 0%;
+            justify-content: space-around;
+            .navbar-nav{
+                margin-right: 0; /* Elimina el margen derecho predeterminado */
+                .nav-item{
+                    .nav-link{
+                        color: $colorLetra;
+                        transition: color 0.3s ease;
+                        &:hover{
+                            color: rgb(250, 225, 97);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

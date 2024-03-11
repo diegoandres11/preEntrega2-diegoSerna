@@ -8,11 +8,12 @@
     <!--estilos css propios-->
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/f04861e7cb.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/img/colombia.png" type="image/x-icon">
+    <title>Atracciones</title>
 </head>
 <body>
     <!--header de la pagina atracciones-->
-    <header class="header container-fluid">
+    <header class="header">
         <div class="containerHeader col">
             <a href="./atracciones.html">
                 <img src="../assets/img/colombia.png" alt="logo" class="imgLogo">
@@ -20,12 +21,12 @@
             <h1>Parque el Colombiano</h1>
         </div>
         
-        <nav class="navbar navbar-expand-lg col">
+        <nav class="navbar navbar-expand-lg col" id="nav">
             <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav flex-column flex-lg-row">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
@@ -46,10 +47,10 @@
         </nav>
     </header>
     <!--main de la pagina atraccion-->
-    <main class="main-page">
+    <main class="main">
             <div id="contAtracciones">
-                <h1 class="tituloAtracciones">Atracciones parque el Colombiano</h1>
-                <p class="textoAtrac">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae incidunt maiores minus accusamus facilis, minima iste cum labore perferendis? Omnis minima nesciunt ipsa voluptas, similique ducimus atque maiores ut nam?</p>
+                <h2 class="tituloAtracciones">Atracciones parque el Colombiano</h2>
+                <p class="textoAtrac">Déjate llevar por la adrenalina en nuestras atracciones más emocionantes o disfruta de un día tranquilo explorando nuestros jardines y áreas de descanso. ¡La diversión nunca termina en Parque El Colombiano!</p>
             </div>
             <section class="sectionAtracciones container">
                 
@@ -82,8 +83,8 @@
     
     <!--footer de la pagina atracciones-->
     <footer id="footer" class="footer container-fluid">
-        <div class=" divFooter row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="row">
+            <div class="itemFooter col-sm-12 col-md-6 col-lg-4">
                 <h3 class="tituloFooter">Nuestras redes sociales</h3>
                 <div>
                     <a href="" class="enlace row">
@@ -96,11 +97,12 @@
                         <i class="fa-brands fa-instagram">Instagram</i>
                     </a>
                 </div>
-            </div>
+                
+        </div>
 
-            <p class="mensaje col-sm-12 col-md-6 col-lg-4">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
+        <p class="itemFooter mensaje col-sm-12 col-md-6 col-lg-4">"La vida es una montaña rusa de emociones, ¡disfruta de cada subida y bajada!"</p>
 
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="itemFooter col-sm-12 col-md-6 col-lg-4">
             <h3 class="tituloFooter">Horario</h3>
             <div>
                 <p>De Lunes a Domingo</p>
@@ -108,10 +110,6 @@
             </div>
             
         </div>
-                
-        </div>
-
-        
         </div>
         
         
