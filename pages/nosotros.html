@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--etiqueta metadescription-->
+    <meta name="description" content="¡Descubre quiénes somos y qué nos hace únicos como parque de diversiones! Conoce nuestra historia, nuestros valores y nuestra misión. Desde nuestra fundación, nos dedicamos a proporcionar experiencias inolvidables y seguras para toda la familia.">
+    <!--etiqueta meta keywords-->
+    <meta name="keywords" content="nosotros, parque de diversiones, historia, valores, misión, experiencia, diversión, seguridad, entretenimiento, familia">
+
     <!--CDN de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--estilos css propios-->
@@ -14,37 +19,29 @@
 <body>
     <!--header de la pagina nosotros-->
     <header class="header">
-        <div class="containerHeader col">
-            <a href="./nosotros.html">
-                <img src="../assets/img/colombia.png" alt="logo" class="imgLogo">
-            </a>
-            <h1>Parque el Colombiano</h1>
-        </div>
-        
-        <nav class="navbar navbar-expand-lg col" id="nav">
-            <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="containerHeader col">
+                    <a href="../index.html">
+                        <img src="../assets/img/colombia.png" alt="logo del parque el Colombiano" class="imgLogo">
+                    </a>
+                    <h1>Parque el Colombiano</h1>
+                </div>
+              <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav flex-column flex-lg-row">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./atracciones.html">Atracciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./planeaTuVisita.html">Planea tu visita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                    </li>
-                </ul>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./atracciones.html">Atracciones</a>
+                  <a class="nav-link" href="./planeaTuVisita.html">Visita</a>
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  <a class="nav-link" aria-disabled="true" href="./contactanos.html">Contactanos</a>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
+        
     </header>
 
     <!--main de la pagina nosostros-->
@@ -53,17 +50,17 @@
             <section class="seccionQuienesSomos col-sm-12 col-md-6 col-lg-4">
                 <h2 class="mb-3">¿Quienes somos?</h2>
                 <p class="mb-3">En Parque El Colombiano, nos enorgullece ofrecer experiencias inolvidables a nuestros visitantes. Desde nuestros inicios, nos hemos comprometido a proporcionar un lugar donde la diversión, la seguridad y la magia se unen para crear momentos inolvidables para familias y amigos.</p>
-                <img src="../assets/img/quienes.png" alt="imagenQuienesSomos" class="img-fluid">
+                <img src="../assets/img/quienes.png" alt="imagenQuienesSomos" class="imagen de pregunta quienes somos">
             </section>
             <section class="seccionQuienesSomos col-sm-12 col-md-6 col-lg-4">
                 <h2 class="mb-3">Visión</h2>
                 <p class="mb-3">En Parque El Colombiano, aspiramos a ser reconocidos como el destino líder en entretenimiento familiar en Colombia y más allá. Nos esforzamos por ser un referente de excelencia en la industria del entretenimiento, ofreciendo experiencias únicas y memorables que cautiven a nuestros visitantes de todas las edades.</p>
-                <img src="../assets/img/vision.png" alt="imagenVisionDeLaEmpresa" class="img-fluid">
+                <img src="../assets/img/vision.png" alt="imagen de nuestros objetivos" class="img-fluid">
             </section>
             <section class="seccionQuienesSomos col-sm-12 col-md-6 col-lg-4">
                 <h2 class="mb-3">Misión</h2>
                 <p class="mb-3">En Parque El Colombiano, nuestra misión es ofrecer experiencias de entretenimiento excepcionales que deleiten y emocionen a nuestros visitantes de todas las edades. Nos esforzamos por crear un ambiente seguro, acogedor y lleno de diversión, donde las familias y amigos puedan disfrutar juntos de momentos inolvidables.</p>
-                <img src="../assets/img/mision.png" alt="imagenMisionDeLaEmpresa" class="img-fluid">
+                <img src="../assets/img/mision.png" alt="imagen sobre los objetivos de la empresa" class="img-fluid">
             </section>
         </div>
         

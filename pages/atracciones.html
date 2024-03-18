@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--etiqueta metadescription-->
+    <meta name="description" content="¡Descubre la diversión sin límites en nuestro parque de atracciones! Desde emocionantes montañas rusas hasta atracciones familiares, tenemos algo para todos. Visítanos hoy y vive una experiencia inolvidable.">
+
+    <!--etiqueta meta keywords-->
+    <meta name="keywords" content="parque de diversiones, atracciones, montañas rusas, diversión en familia, entretenimiento, adrenalina, parque temático">
+
     <!--CDN de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--estilos css propios-->
@@ -14,37 +20,29 @@
 <body>
     <!--header de la pagina atracciones-->
     <header class="header">
-        <div class="containerHeader col">
-            <a href="./atracciones.html">
-                <img src="../assets/img/colombia.png" alt="logo" class="imgLogo">
-            </a>
-            <h1>Parque el Colombiano</h1>
-        </div>
-        
-        <nav class="navbar navbar-expand-lg col" id="nav">
-            <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="containerHeader col">
+                    <a href="./atracciones.html">
+                        <img src="../assets/img/colombia.png" alt="logo del parque el Colombiano" class="imgLogo">
+                    </a>
+                    <h1>Parque el Colombiano</h1>
+                </div>
+              <button class="navbar-toggler" id="hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav flex-column flex-lg-row">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./atracciones.html">Atracciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./planeaTuVisita.html">Planea tu visita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactanos.html">Contactanos</a>
-                    </li>
-                </ul>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./atracciones.html">Atracciones</a>
+                  <a class="nav-link" href="./planeaTuVisita.html">Visita</a>
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  <a class="nav-link" aria-disabled="true" href="./contactanos.html">Contactanos</a>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
+        
     </header>
     <!--main de la pagina atraccion-->
     <main class="main">
@@ -57,21 +55,21 @@
                 <ul class="listaAtracciones row">
                     <li class="elementoAtracciones col-sm-12 col-md-6 col-lg-4">
                         <article class="card">
-                            <img src="../assets/img/montañaRusa.png" alt="montañaRusa" class="imgAtrac">
+                            <img src="../assets/img/montañaRusa.png" alt="imagen de una montaña rusa" class="imgAtrac">
                             <p>montaña rusa</p>
                             <p>velocidad: 45km/h</p>
                         </article>
                     </li>
                     <li class="elementoAtracciones col-sm-12 col-md-6 col-lg-4">
                         <article class="card">
-                            <img src="../assets/img/carousel.png" alt="carrusel" class="imgAtrac">
+                            <img src="../assets/img/carousel.png" alt="imagen de un carrusel" class="imgAtrac">
                             <p>carrusel</p>
                             <p>velocidad: 30km/h</p>
                         </article>
                     </li>
                     <li class="elementoAtracciones col-sm-12 col-md-6 col-lg-4">
                         <article class="card">
-                            <img src="../assets/img/skull.png" alt="castilloDeTerror" class="imgAtrac">
+                            <img src="../assets/img/skull.png" alt="imagen de un castillo de terror" class="imgAtrac">
                             <p>castillo del terror</p>
                             <p>tiempo de duracion: 15 min</p>
                         </article>
